@@ -1,0 +1,100 @@
+<template>
+    <div class="about" @swipe="Back">
+      <text class="title">关于</text>
+      <text class="appname">16 Personalities</text>
+      <text class="appversion">版本1.0.0</text>
+      <text class="developerlabel">参与开发的人员</text>
+      <text class="developerdetail">@Anya1014</text>
+      <text class="developerlabel">欢迎访问我的博客</text>
+      <text class="developerdetail">https://anya1014.cn/</text>
+      <text class="describtitle">说明：</text>
+      <text class="describconetnt">本程序仅包含查询功能，无测试功能。所有数据均来自于16 Personalities</text>
+      <text class="describconetnt">仅包含无需购买的数据。如果您想要测试您的人格或者购买完整版数据，请前往其官方网站</text>
+      <text class="describconetnt">https://www.16personalities.com/。</text>
+      <text class="describconetnt">本程序仅供学习交流。</text>
+      <text class="describtitle">非从属关系声明：</text>
+      <text class="describconetnt">16 Personalities是NERIS Analytics Limited的商标</text>
+      <text class="describconetnt">本程序所引用的任何图片及文本版权均为NERIS Analytics Limited所有</text>
+      <text class="describconetnt">本程序与NERIS Analytics Limited无任何从属关系。</text>
+      <text class="describtitle">官方免责声明：</text>
+      <text class="describconetnt">本网站的所有非英语版本均包含自动翻译或用户提交的翻译。它们不具有任何约束力，不保证准确性，也不具有任何法律效力。本网站的正式文本为英文版本。请考虑向 support@16personalities.com 报告翻译问题！</text>
+      <text class="describconetnt">All non-English versions of the website contain automated translations or translations submitted by our users. They are not binding in any way, are not guaranteed to be accurate, and have no legal effect. The official text is the English version of the website. Please consider reporting translation issues to support@16personalities.com!</text>
+    </div>
+  </template>
+
+  <script>
+  import router from '@system.router'
+  import configuration from '@system.configuration'
+  
+  export default {
+    Back(eve) {
+      if (eve.direction === 'right') {
+        router.back()
+      }
+    }
+  }
+  </script>
+
+<style>
+.about {
+  background-color: #000000;
+  flex-direction: column;
+	align-content: center;
+}
+
+.title {
+	max-height: 40px;
+	font-size: 30px;
+	margin-top: 20px;
+	margin-left: 128px;
+	width: 300px;
+	align-content: center;
+	color: #ffffff
+}
+
+.appname {
+	margin-left: 20px;
+	margin-top: 8px;
+	color: #ffffff
+}
+
+.appversion {
+	margin-left: 20px;
+	margin-top: 10px;
+	color: #ffffff5f
+}
+
+.developerlabel {
+	margin-left: 20px;
+	margin-top: 10px;
+	color: #ffffff5f
+}
+
+.developerdetail {
+	margin-left: 20px;
+	margin-top: 10px;
+	color: #ffffff
+}
+
+.describtitle {
+	margin-top: 47px;
+	color: #ffffff5f
+}
+
+.describconetnt {
+	margin-top: 8px;
+	color: #ffffff
+}
+
+.subtitle {
+  font-size: 25px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.text {
+  font-size: 20px;
+  text-align: left;
+  color: #d4d4d4;
+}
+</style>

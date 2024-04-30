@@ -1,0 +1,79 @@
+{
+  "package": "com.anya1014.16personalities",
+  "name": "16Personalities",
+  "versionName": "1.0.0",
+  "versionCode": 1,
+  "minPlatformVersion": 1000,
+  "icon": "/common/logo.png",
+  "deviceTypeList": [
+    "watch"
+  ],
+  "features": [
+    {
+      "name": "system.router"
+    }
+  ],
+  "config": {
+    "logLevel": "log",
+    "designWidth": 480
+  },
+  "router": {
+    "entry": "pages/index",
+    "pages": {
+      "pages/index": {
+        "component": "index"
+      },
+      "pages/about": {
+        "component": "about"
+      },
+      "pages/intj": {
+        "component": "intj"
+      },
+      "pages/intp": {
+        "component": "intp"
+      },
+      "pages/entj": {
+        "component": "entj"
+      },
+      "pages/entp": {
+        "component": "entp"
+      },
+      "pages/infj": {
+        "component": "infj"
+      },
+      "pages/infp": {
+        "component": "infp"
+      },
+      "pages/enfj": {
+        "component": "enfj"
+      },
+      "pages/enfp": {
+        "component": "enfp"
+      },
+      "pages/istj": {
+        "component": "istj"
+      },
+      "pages/isfj": {
+        "component": "isfj"
+      },
+      "pages/estj": {
+        "component": "estj"
+      },
+      "pages/esfj": {
+        "component": "esfj"
+      },
+      "pages/istp": {
+        "component": "istp"
+      },
+      "pages/isfp": {
+        "component": "isfp"
+      },
+      "pages/estp": {
+        "component": "estp"
+      },
+      "pages/esfp": {
+        "component": "esfp"
+      }
+    }
+  }
+}

@@ -1,0 +1,167 @@
+<template>
+  <div class="index" @swipe="Back">
+    <text class="title">16 Personalities</text>
+    <input class="btn" type="button" value="关于" onclick="routeAbout" />
+    <input class="btn" type="button" value="退出" onclick="routeExit" />
+    <text class="cat">分析家</text>
+    <input class="btn" type="button" value="建筑师 INTJ-A / INTJ-T" onclick="routeIntj" />
+    <input class="btn" type="button" value="逻辑学家 INTP-A / INTP-T" onclick="routeIntp" />
+    <input class="btn" type="button" value="指挥官 ENTJ-A / ENTJ-T" onclick="routeEntj" />
+    <input class="btn" type="button" value="辩论家 ENTP-A / ENTP-T" onclick="routeEntp" />
+    <text class="cat">外交家</text>
+    <input class="btn" type="button" value="提倡者 INFJ-A / INFJ-T" onclick="routeInfj" />
+    <input class="btn" type="button" value="调停者 INFP-A / INFP-T" onclick="routeInfp" />
+    <input class="btn" type="button" value="主人公 ENFJ-A / ENFJ-T" onclick="routeEnfj" />
+    <input class="btn" type="button" value="竞选者 ENFP-A / ENFP-T" onclick="routeEnfp" />
+    <text class="cat">守护者</text>
+    <input class="btn" type="button" value="物流师 ISTJ-A / ISTJ-T" onclick="routeIstj" />
+    <input class="btn" type="button" value="守卫者 ISFJ-A / ISFJ-T" onclick="routeIsfj" />
+    <input class="btn" type="button" value="总经理 ESTJ-A / ESTJ-T" onclick="routeEstj" />
+    <input class="btn" type="button" value="执政官 ESFJ-A / ESFJ-T" onclick="routeEsfj" />
+    <text class="cat">探险家</text>
+    <input class="btn" type="button" value="鉴赏家 ISTP-A / ISTP-T" onclick="routeIstp" />
+    <input class="btn" type="button" value="探险家 ISFP-A / ISFP-T" onclick="routeIsfp" />
+    <input class="btn" type="button" value="企业家 ESTP-A / ESTP-T" onclick="routeEstp" />
+    <input class="btn" type="button" value="表演者 ESFP-A / ESFP-T" onclick="routeEsfp" />
+  </div>
+</template>
+
+<script>
+import router from '@system.router'
+import configuration from '@system.configuration'
+
+export default {
+  Back(eve) {
+    if (eve.direction === 'right') {
+    router.back()
+   }
+  },
+  routeAbout() {
+    router.push({
+      uri: '/pages/about'
+    })
+  },
+  routeNote() {
+    router.push({
+      uri: '/pages/note'
+    })
+  },
+  routeExit() {
+    router.back()
+  },
+  routeIntj() {
+    router.push({
+      uri: '/pages/intj'
+    })
+  },
+  routeIntp() {
+    router.push({
+      uri: '/pages/intp'
+    })
+  },
+  routeEntj() {
+    router.push({
+      uri: '/pages/entj'
+    })
+  },
+  routeEntp() {
+    router.push({
+      uri: '/pages/entp'
+    })
+  },
+  routeInfj() {
+    router.push({
+      uri: '/pages/infj'
+    })
+  },
+  routeInfp() {
+    router.push({
+      uri: '/pages/infp'
+    })
+  },
+  routeEnfj() {
+    router.push({
+      uri: '/pages/enfj'
+    })
+  },
+  routeEnfp() {
+    router.push({
+      uri: '/pages/enfp'
+    })
+  },
+  routeIstj() {
+    router.push({
+      uri: '/pages/istj'
+    })
+  },
+  routeIsfj() {
+    router.push({
+      uri: '/pages/isfj'
+    })
+  },
+  routeEstj() {
+    router.push({
+      uri: '/pages/estj'
+    })
+  },
+  routeEsfj() {
+    router.push({
+      uri: '/pages/esfj'
+    })
+  },
+  routeIstp() {
+    router.push({
+      uri: '/pages/istp'
+    })
+  },
+  routeIsfp() {
+    router.push({
+      uri: '/pages/isfp'
+    })
+  },
+  routeEstp() {
+    router.push({
+      uri: '/pages/estp'
+    })
+  },
+  routeEsfp() {
+    router.push({
+      uri: '/pages/esfp'
+    })
+  }
+}
+</script>
+
+<style>
+.index {
+  background-color: #000000;
+  flex-direction: column;
+}
+
+.title {
+	max-height: 40px;
+	font-size: 30px;
+	margin-top: 20px;
+	margin-left: 128px;
+	width: 300px;
+	align-content: center;
+	color: #ffffff
+}
+.cat {
+	margin-top: 47px;
+	margin-left: 10px;
+	color: #ffffff5f
+}
+
+.btn {
+  width: 480px;
+  height: 90px;
+  background-color: #757575;
+  font-size: 30px;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+</style>

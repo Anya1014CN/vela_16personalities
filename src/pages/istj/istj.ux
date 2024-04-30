@@ -1,0 +1,87 @@
+<template>
+    <div class="about" @swipe="Back">
+      <text class="title">物流师  ISTJ-A / ISTJ-T</text>
+      <input class="btn" type="button" value="返回" onclick="routeBack" />
+      <text class="saying">如果不使用我被赋予的任何能力，我会更害怕。我会更害怕拖延和懒惰。</text>
+      <text class="author">----丹泽尔·华盛顿</text>
+      <text class="paracontent">物流师以自己的正直为荣。这种性格类型的人说话算数，当他们承诺做某事时，他们一定要坚持到底。</text>
+      <text class="paracontent">这种人格类型占总人口比较多的一部分，尽管物流师可能不是特别浮华或寻求关注的那一类，但他们所做的远超了自己的分内工作，以使社会保持在坚实、稳定的基础上。在他们的家庭和社区中，物流师经常因其可靠性、实用性以及即使在压力最大的情况下也能保持脚踏实地和逻辑性而赢得尊重。</text>
+      <text class="incert">在一个许多人推卸责任或专说他们认为别人想听的话的世界中，物流师以奉献、负责和诚实的态度脱颖而出。</text>
+      <text class="paratitle">正直的生活</text>
+      <text class="paracontent">物流师自尊的核心来自个人诚信意识。具有这种性格类型的人认为，在任何情况下都有正确的方法行事--任何假装这样行不通的人都可能试图改变规则以适应自己的目的。物流师非常尊重结构和传统，他们经常被提供清晰等级和期望的组织、工作场所和教育环境所吸引。</text>
+      <text class="incert">对于许多物流师来说，缺乏结构不是自由，而是混乱。</text>
+      <text class="paracontent">具有物流师性格类型的人很少在为自己的行为和选择承担责任方面犹豫不决。一般来说，他们很快就会承认自己的错误并认清事实，即使事实并不能使他们很光彩。对于物流师来说，诚实远比表演技巧重要，他们宁愿凭自己的良心平淡无奇，也不愿用撒谎来打动别人。</text>
+      <text class="paracontent">因为无论如何他们都努力履行自己的义务，所以物流师的性格常常为那些未能达到相同标准的人所不解。有时，物流师可能会不公平地误判那些无法达到严格意义上自我控制的人--怀疑这些人懒惰或不诚实，实际上他们可能正在应对其他挑战。即使物流师不大声说出这些判断，他们的不屑也会随之而来，从而为他们赢得了严苛或不具有同情心的声誉。</text>
+      <text class="paratitle">收拾烂摊子</text>
+      <text class="paracontent">物流师的奉献精神是令人钦佩的品质，这推动了他们取得许多成就。但这也可能成为其他人利用的弱点。物流师以其强烈的职业道德和责任感，可能会经常发现自己承担着他人的责任。即使他们不抱怨这种情况，如果物流师经常被期望(或自己承担责任)为同事、朋友或亲人收拾残局，他们最终可能会精疲力尽或心灰意冷。</text>
+      <text class="incert">物流师可能会发现自己在做别人的工作--却没有为此获得功劳。</text>
+      <text class="paracontent">物流师并不善于表达自己的情绪，但这并不意味着这种性格类型的人在承受超过额定负荷时不会感到沮丧或怨恨。除非他们确保他们的关系是平衡和可持续的，否则物流师最终可能会损害他们认为需要保护的非常稳定的状态。好消息是，通过学习设定适当的界限并在过度紧张时大声疾呼，物流师可以为世界提供他们许多天赋的全部利好，包括他们的清晰度、忠诚度和可靠性。</text>
+      <input class="btn" type="button" value="返回" onclick="routeBack" />
+    </div>
+  </template>
+
+  <script>
+  import router from '@system.router'
+  import configuration from '@system.configuration'
+  
+  export default {
+    Back(eve) {
+      if (eve.direction === 'right') {
+        router.back()
+      }
+    },
+   routeBack() {
+     router.back()
+   }
+  }
+  </script>
+
+<style>
+.about {
+  background-color: #000000;
+  flex-direction: column;
+}
+
+.title {
+	max-height: 40px;
+	font-size: 30px;
+	margin-top: 20px;
+	margin-left: 80px;
+	width: 470px;
+	align-content: center;
+	color: #ffffff
+}
+
+.text {
+  font-size: 20px;
+  text-align: left;
+  color: #d4d4d4;
+}
+
+.saying {
+	margin-top: 8px;
+	color: #ffffff
+}
+
+.author {
+	margin-top: 8px;
+  text-align: right;
+	color: #ffffff5f
+}
+
+.paratitle {
+	margin-top: 10px;
+	color: #ffffff5f
+}
+
+.paracontent {
+	margin-top: 10px;
+	color: #ffffff
+}
+
+.incert {
+	margin-top: 8px;
+  text-align: right;
+	color: #ffffffee
+}
+</style>
